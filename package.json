@@ -1,0 +1,11 @@
+{
+  "name": "shayan-habibi",
+  "version": "1.0.0",
+  "description": "A website that showcases the resume of Shayan Habibi",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Armin Parvin",
+  "license": "ISC"
+}

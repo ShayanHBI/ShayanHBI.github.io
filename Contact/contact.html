@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shayan Habibi: Contact</title>
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+</head>
+<body>
+    <div class="flex-wrapper">
+        <header>
+            <h1>Shayan Habibi</h1>
+            <nav>
+                <ul>
+                    <li class="home">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="research">
+                        <a href="../Research/research.html">Research</a>
+                    </li>
+                    <li class="academic-background">
+                        <a href="../Academic Background/academic-background.html">Academic Background</a>
+                    </li>
+                    <li class="publications">
+                        <a href="../Publications/publications.html">Publications</a>
+                    </li>
+                    <li class="contact active">
+                        <a href="../Contact/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <ul class="contacts">
+                <li class="yahoo-mail">
+                    <a href="mailto:shayanhabibi75@yahoo.com">
+                        <figure>
+                            <img src="../Resources/images/icons/PersonalEmail.svg" alt="">
+                            <figcaption>shayanhabibi75@yahoo.com</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="academic-mail">
+                    <a href="mailto:shayah.habibi@mech.sharif.edu">
+                        <figure>
+                            <img src="../Resources/images/icons/AcademicEmail.svg" alt="">
+                            <figcaption>shayah.habibi@mech.sharif.edu</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="skype">
+                    <a href="skype:live:.cid.839e77a9a6cf6227?chat">
+                        <figure>
+                            <img src="../Resources/images/icons/Skype.svg" alt="">
+                            <figcaption>live:.cid.839e77a9a6cf6227</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="linkedin">
+                    <a href="https://www.linkedin.com/in/shayan-habibi-89125219b/">
+                        <figure>
+                            <img src="../Resources/images/icons/Linkedin.svg" alt="">
+                            <figcaption>https://www.linkedin.com/in/shayan-habibi-89125219b/</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="address">
+                    <a href="http://www.mech.sharif.ir/home">
+                        <figure>
+                            <img src="../Resources/images/icons/Institiute.svg" alt="">
+                            <figcaption>Dept. Mechanical Engineering, Sharif University of Technology, Azadi St., Tehran, Iran</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+            
+            <form name="contact" action="mailto:" method="POST">
+                <!-- Contact Form Here -->
+                <script>
+                    var form = document.forms["contact"];
+                    form.addEventListener('submit',contact_submit,false);
+
+                    function contact_submit(e) {
+                        // Stop Form From Submitting
+                        e.preventDefault();
+
+                        // Set Initial Variables
+                        var target = e.target || e.srcElement;
+                        var to = 'armin.p4rvin@gmail.com';
+                        var uri = 'mailto:' + to;
+                        var body = '';
+
+                        // Set Form Values to Variables
+                        var name = target.elements['name'].value;
+                        var subject = target.elements['subject'].value;
+                        var message = target.elements['message'].value;
+
+                        // Build Body / Message with all Input Fields
+                        body += message + "\r\n\r\n";
+                        body += "Name: " + name + "\r\n";
+
+                        // Build final Mailto URI
+                        uri += '?subject=' + encodeURIComponent(subject);
+                        uri += '&body=' + encodeURIComponent(body);
+
+                        // Open Mailto in New Window / Tab
+                        window.open(uri,'_blank');
+                    }
+                </script>
+                <fieldset>
+                    <legend>Send me an Email!</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" name="subject" id="subject" required>
+
+                    <label for="message">Your Message:</label>
+                    <textarea name="message" spellcheck="true" id="message" required></textarea>
+
+                    <input type="submit" value="Send!">
+                </fieldset>
+            </form>
+        </main>
+
+        <footer>
+            <span class="name">Shayan Habibi</span>
+            <div class="copyright">
+                <p>Copyright &copy; 2021 Armin Parvin.
+                    <br>
+                    All rights reserved.
+                </p>
+            </div>
+            <a href="#top" class="back-to-top">Back to top</a>
+        </footer>
+    </div>
+</body>
+</html>
