@@ -106,7 +106,7 @@ main a:hover {
     height: 6vw;
 }
 
-main > .education {
+.education-grid {
     margin: 1rem 2rem 1rem;
     display: grid;
     grid-template-columns: min-content, 1fr, 1fr;
@@ -176,6 +176,73 @@ main > .education {
     margin-right: 2rem;
     grid-column: 2 / 3;
     margin-top: -0.6rem;
+}
+
+.inline-grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.research-interests-grid {
+    margin: 1rem 2rem 1rem;
+    display: grid;
+    grid-template-rows: min-content min-content 1fr;
+    text-align: left;
+    align-items: center;
+    justify-items: start;
+    font-size: 1rem;
+}
+
+.honours-awards-grid {
+    margin: 1rem 2rem 1rem;
+    display: grid;
+    grid-template-rows: min-content min-content 1fr;
+    text-align: left;
+    align-items: center;
+    justify-items: start;
+    font-size: 1rem;
+}
+
+.inline-grids h2 {
+    margin-top: 1rem;
+}
+
+.honours-awards-grid ul {
+    margin-top: 1rem;
+}
+
+.skills-grid {
+    margin: 1rem 2rem 1rem;
+    display: grid;
+    grid-template-rows: min-content min-content 1fr;
+    text-align: left;
+    align-items: center;
+    justify-items: start;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+.teach-exp-grid {
+    margin: 1rem 2rem 1rem;
+    display: grid;
+    grid-template-rows: min-content min-content 1fr;
+    text-align: left;
+    align-items: center;
+    justify-items: start;
+    font-size: 1rem;
+}
+
+.teach-exp-grid h2 {
+    margin-top: 1rem;
+}
+
+.teach-exp-grid h3 {
+    margin-top: 0.5rem;
 }
 
 .institute {
