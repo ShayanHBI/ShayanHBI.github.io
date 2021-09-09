@@ -82,8 +82,8 @@ main ul {
     display: flex;
     font-size: 0.5rem;
     text-align: center;
-    justify-content: center;
-    width: 40vw;
+    justify-content: space-around;
+    width: 90vw;
     margin: 2rem auto;
 }
 
@@ -92,12 +92,11 @@ main ul li {
 }
 
 figure img {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
 }
 
 .academic-mail img {
-    width: 12rem;
+    width: 10rem;
 }
 
 .academic-mail img:hover {
@@ -105,11 +104,11 @@ figure img {
 }
 
 .yahoo-mail img {
-    width: 15rem;
+    width: 12rem;
 }
 
 .yahoo-mail img:hover {
-    width: 17rem;
+    width: 16rem;
 }
 
 .linkedin img {
@@ -127,8 +126,8 @@ figure figcaption {
 
 figure img:hover + figcaption{
     display: block;
-    margin-top: 1rem;
-    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-size: 2.5em;
 }
 
 .contacts a:link,
