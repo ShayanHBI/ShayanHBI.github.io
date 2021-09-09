@@ -78,20 +78,6 @@ nav ul li a:active {
     color: #ff0074;
 }
 
-.cv {
-    width: 13vw;
-    position: absolute;
-    right: 3rem;
-    top: 13rem;
-}
-
-.cv:hover {
-    width: 15vw;
-    position: absolute;
-    right: 2rem;
-    top: 12rem;
-}
-
 main a:link {
     text-decoration: none;
     color: #414141
@@ -111,22 +97,85 @@ main a:hover {
     color: black;
 }
 
-article {
+.main-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    height: 6vw;
+}
+
+main > .education {
+    margin: 1rem 2rem 1rem;
     display: grid;
-    width: 80vw;
-    margin: 0 auto;
-    border: 1px black solid;
-    padding: 3rem;
-    border-radius: 13px;
-    margin-top: 5rem;
+    grid-template-columns: min-content, 1fr, 1fr;
+    grid-template-rows: min-content, 1fr, 1fr;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    font-size: 1rem;
 }
 
-.education div {
-    margin-bottom: 1rem;
+.education .icon {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    text-align: center;
 }
 
-.education div h3 {
-    display: inline;
+.education-title {
+    height: 100%;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+}
+
+.education-title h2 {
+    grid-row: 1 / 2;
+}
+
+.ms {
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: min-content, 1fr;
+    grid-template-rows: repeat(2, minmax(min-content, 1fr));
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+    align-self: flex-start;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.bs {
+    display: grid;
+    grid-template-columns: min-content, 1fr;
+    grid-template-rows: repeat(2, minmax(min-content, 1fr));
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.date {
+    grid-column: 1 / 2;
+}
+
+.degree {
+    grid-column: 2 / 3;
+    font-size: 1.3rem;
+    justify-self: flex-start;
+    margin-left: 1rem;
+}
+
+.explanation {
+    margin-left: 1rem;
+    margin-right: 2rem;
+    grid-column: 2 / 3;
+    margin-top: -0.6rem;
 }
 
 .institute {

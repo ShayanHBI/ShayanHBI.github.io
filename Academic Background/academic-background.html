@@ -32,26 +32,29 @@
             </nav>
         </header>
 
-        <main>
-            <a href="">
-                <img src="../Resources/images/icons/CV download.svg" alt="" class="cv">
-            </a>
-            <article>
-                <div class="education">
-                    <img src="../Resources/images/icons/Education.svg" alt="">
+        <main class="main-flex">
+            
+            <section class="education">
+                <img src="../Resources/images/icons/Education.svg" alt="" class="education icon">
+                <div class="education-title">
                     <h2>Education</h2>
-                    <div class="ms">
-                        <h3>2019 - Date</h3>
-                        <h3>MS in Mechanical Engineering</h3>
+                </div>
+                
+                <div class="ms">
+                    <h3 class="date">2019 - Date</h3>
+                    <h3 class="degree">MS in Mechanical Engineering</h3>
+                    <div class="explanation">
                         <p><a href="http://www.en.sharif.edu/"><span class="institute">Sharif University of Technology (SUT)</span></a>, Tehran, Iran</p>
                         <ul>
                             <li>Project advisor: <a href="http://sharif.ir/~firoozabadi/" class="professor">Dr. B. Firoozabadi</a></li>
                             <li>GPA: 19.25/20 (4/4)</li>
                         </ul>
                     </div>
-                    <div class="bs">
-                        <h3>2015 - 2019</h3>
-                        <h3>BS in Mechanical Engineering</h3>
+                </div>
+                <div class="bs">
+                    <h3 class="date">2015 - 2019</h3>
+                    <h3 class="degree">BS in Mechanical Engineering</h3>
+                    <div class="explanation">
                         <p><a href="http://www.iust.ac.ir/en"><span class="institute">Iran University of Science Technology (IUST)</span></a>, Tehran, Iran</p>
                         <ul>
                             <li>Project advisor: Dr. M. Siavashi</li>
@@ -59,58 +62,33 @@
                         </ul>
                     </div>
                 </div>
-            </article>
-            <article>
-                <img src="../Resources/images/icons/Skills.svg" alt="">
-                <div class="skills">
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>
-                            <img src="../Resources/images/icons/Programming.svg" alt="">
-                            <h3 class="skill">Programming</h3>
-                            <ul>
-                                <li>Matlab</li>
-                                <li>C++</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <img src="../Resources/images/icons/Software.svg" alt="">
-                            <h3 class="skill">Software</h3>
-                            <ul>
-                                <li>OpenFOAM</li>
-                                <li>ANSYS FLUENT</li>
-                                <li>CATIA</li>
-                                <li>SIMULINK</li>
-                                <li>ANSYS ICEM</li>
-                                <li>HyperMesh</li>
-                                <li>SALOME</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <img src="../Resources/images/icons/Experimental Techniques.svg" alt="">
-                            <h3 class="skill">Experimental Techniques</h3>
-                            <ul>
-                                <li>PIV</li>
-                                <li>LIF</li>
-                                <li>LA</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <img src="../Resources/images/icons/English Language.svg" alt="">
-                            <h3 class="skill">English Language (IELTS)</h3>
-                            <ul>
-                                <li>Overall: 7</li>
-                                <li>Speaking: 6.5</li>
-                                <li>Listening: 7.5</li>
-                                <li>Reading: 7</li>
-                                <li>Writing: 6.5</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </article>
-            <article class="honours-awards">
-                <img src="../Resources/images/icons/Honours and Awards.svg" alt="">
+            </section>
+            <section class="research-interests">
+                <img src="../Resources/images/icons/" alt="" class="research-interests icon">
+                <h2>Research Interests</h2>
+                <ul>
+                    <li>
+                        Computational Fluid Dynamics (CFD)
+                    </li>
+                    <li>
+                        Turbulent Flows
+                    </li>
+                    <li>
+                        Large Eddy Simulation (LES)
+                    </li>
+                    <li>
+                        Buoyancy Driven Flows
+                    </li>
+                    <li>
+                        Jet Flows
+                    </li>
+                    <li>
+                        Optical Flow Diagnostic Techniques
+                    </li>
+                </ul>
+            </section>
+            <section class="honours-awards">
+                <img src="../Resources/images/icons/Honours and Awards.svg" alt="" class="honours-awards icon">
                 <h2>Honours and Awards</h2>
                 <ul>
                     <li>
@@ -130,9 +108,58 @@
                         <p>Second competition of performing Flamenco guitar, Qazvin, Iran</p>
                     </li>
                 </ul>
-            </article>
-            <article class="teaching-experience">
-                <img src="../Resources/images/icons/Teaching Experience.svg" alt="">
+            </section>
+            <section>
+                <img src="../Resources/images/icons/Skills.svg" alt="" class="skills icon">
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>
+                            <img src="../Resources/images/icons/Programming.svg" alt="" class="programming icon">
+                            <h3 class="skill">Programming</h3>
+                            <ul>
+                                <li>Matlab</li>
+                                <li>C++</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="../Resources/images/icons/Software.svg" alt="" class="software icon">
+                            <h3 class="skill">Software</h3>
+                            <ul>
+                                <li>OpenFOAM</li>
+                                <li>ANSYS FLUENT</li>
+                                <li>CATIA</li>
+                                <li>SIMULINK</li>
+                                <li>ANSYS ICEM</li>
+                                <li>HyperMesh</li>
+                                <li>SALOME</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="../Resources/images/icons/Experimental Techniques.svg" alt="" class="exp-tech icon">
+                            <h3 class="skill">Experimental Techniques</h3>
+                            <ul>
+                                <li>PIV</li>
+                                <li>LIF</li>
+                                <li>LA</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="../Resources/images/icons/English Language.svg" alt="" class="eng-lang icon">
+                            <h3 class="skill">English Language (IELTS)</h3>
+                            <ul>
+                                <li>Overall: 7</li>
+                                <li>Speaking: 6.5</li>
+                                <li>Listening: 7.5</li>
+                                <li>Reading: 7</li>
+                                <li>Writing: 6.5</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="teaching-experience">
+                <img src="../Resources/images/icons/Teaching Experience.svg" alt="" class="teach-exp icon">
                 <h2>Teaching Experience</h2>
                 <h3>Teaching assistantship</h3>
                 <ul>
@@ -141,7 +168,10 @@
                     <li>Advanced Mathematics I, Instructor: Dr. A. Moosavi, 2020</li>
                     <li>Fluid Mechanics I, Instructor: Dr. M. Siavashi, 2017</li>
                 </ul>
-            </article>
+            </section>
+            <a href="">
+                <img src="../Resources/images/icons/CV download.svg" alt="" class="cv icon">
+            </a>
         </main>
 
         <footer>
