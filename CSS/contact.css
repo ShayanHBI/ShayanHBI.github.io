@@ -96,14 +96,20 @@ figure img {
     height: 10rem;
 }
 
+.academic-mail img {
+    width: 12rem;
+}
+
+.academic-mail img:hover {
+    width: 14rem;
+}
+
 .yahoo-mail img {
-    height: 11rem;
-    width: 11rem;
+    width: 15rem;
 }
 
 .yahoo-mail img:hover {
-    height: 13rem;
-    width: 13rem;
+    width: 17rem;
 }
 
 .linkedin img {
@@ -123,7 +129,6 @@ figure img:hover + figcaption{
     display: block;
     margin-top: 1rem;
     font-size: 1rem;
-
 }
 
 .contacts a:link,
