@@ -82,33 +82,15 @@ main ul {
     display: flex;
     font-size: 0.5rem;
     text-align: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 90vw;
     margin: 2rem auto;
 }
 
-main ul li {
-    padding: 2rem;
-}
 
 figure img {
     width: 8rem;
-}
-
-.academic-mail img {
-    width: 10rem;
-}
-
-.academic-mail img:hover {
-    width: 14rem;
-}
-
-.yahoo-mail img {
-    width: 12rem;
-}
-
-.yahoo-mail img:hover {
-    width: 16rem;
+    padding: 4rem;
 }
 
 .linkedin img {
@@ -116,8 +98,19 @@ figure img {
 }
 
 figure img:hover {
-    width: 12rem;
-    height: 12rem;
+    width: 10rem;
+}
+
+.yahoo-mail img {
+    width: 7rem;
+}
+
+.yahoo-mail img:hover {
+    padding-bottom: 0;
+}
+
+.academic-mail img {
+    margin-top: 1.6rem;
 }
 
 figure figcaption {
@@ -126,8 +119,10 @@ figure figcaption {
 
 figure img:hover + figcaption{
     display: block;
-    margin-top: 0.5rem;
-    font-size: 2.5em;
+    width: 20vw;
+    margin: 0.5rem auto;
+    font-size: 1.4vw;
+    text-align: center;
 }
 
 .contacts a:link,
