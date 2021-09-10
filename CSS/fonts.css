@@ -4,17 +4,3 @@
     src: url(../Resources/fonts/ArialRoundedMTBold.woff);
     src: url(../Resources/fonts/ArialRoundedMTBold.woff2);
 }
-
-@font-face {
-    font-family: 'Arial Rounded MT Light';
-    src: url(../Resources/fonts/Arial_Rounded_MT_Light.ttf);
-    src: url(../Resources/fonts/ArialRoundedMT-Light.woff);
-    src: url(../Resources/fonts/ArialRoundedMT-Light.woff2);
-}
-
-@font-face {
-    font-family: 'Calibri Light';
-    src: url(../Resources/fonts/calibril.ttf);
-    src: url(../Resources/fonts/Calibri-Light.woff);
-    src: url(../Resources/fonts/Calibri-Light.woff2);
-}

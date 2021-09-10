@@ -105,6 +105,16 @@ nav ul li a:active {
     text-align: justify;
 }
 
+figcaption {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+span {
+    font-style: normal;
+    font-family: 'Arial Rounded MT Bold';
+}
+
 .one,
 .two,
 .three,
