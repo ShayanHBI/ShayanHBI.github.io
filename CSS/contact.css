@@ -6,8 +6,11 @@
 
 html {
     min-height:100%;
-    background-color: #f1f1f1;
-    color: #000;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../Resources/images/bg/Contanct.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
 }
 
 main {
@@ -17,9 +20,9 @@ main {
 }
 
 h1 {
-    font-family: 'Arial Black';
+    font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 2.75rem;
     word-spacing: 1rem;
     letter-spacing: .22em;
@@ -43,6 +46,7 @@ h1::after {
 nav {
     position: sticky;
     top: 0;
+    z-index: 5;
 }
 
 nav ul {
@@ -87,16 +91,17 @@ nav ul li a:active {
     text-align: center;
     margin-top: 5rem;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 1.35rem;
+    font-size: 1.8rem;
 }
 
 .contacts {
     display: grid;
-    grid-template-columns: repeat(5, 10vw);
+    grid-template-columns: repeat(5, 12vw);
+    grid-template-rows: 50vh;
     text-align: center;
     justify-items: center;
     justify-content: space-around;
-    align-items: start;
+    align-items: stretch;
     margin: 6rem;
 }
 
@@ -145,29 +150,27 @@ figure img:hover + figcaption{
 
 footer {
     margin-top: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    justify-items: center;
-    align-items: center;
-    grid-auto-flow: column;
-    color: #fff;
+    display: flex;
     background-color: #0D0B11;
     padding: 1rem 1rem 1rem;
 }
 
-footer .name {
+.name {
+    margin-right: 25rem;
     font-size: 1.1rem;
-    grid-column: 1 / 2;
     color: #ff0074;
-    justify-self: start;
+    align-self: flex-start;
 }
 
-footer .copyright {
-    justify-self: end;
-    margin-right: 2rem;
+.copyright {
+    margin-left: 35rem;
     font-size: .85rem;
-    grid-column: 3 / 4;
     color: #fff;
     text-decoration: none;
+    align-self: flex-end;
+}
+
+footer .name,
+footer .copyright {
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
 }

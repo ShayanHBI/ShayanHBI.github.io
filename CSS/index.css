@@ -7,7 +7,7 @@
 html {
     min-height:100%;
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../Resources/images/pawel-czerwinski-Df9CR3aQFw4-unsplash\ \(1\).jpg);
+    url(../Resources/images/bg/Home.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
@@ -18,9 +18,9 @@ main {
 }
 
 h1 {
-    font-family: 'Arial Black';
+    font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 2.75rem;
     word-spacing: 1rem;
     letter-spacing: .22em;
@@ -44,6 +44,7 @@ h1::after {
 nav {
     position: sticky;
     top: 0;
+    z-index: 5;
 }
 
 nav ul {
@@ -131,29 +132,27 @@ article span {
 
 footer {
     margin-top: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    justify-items: center;
-    align-items: center;
-    grid-auto-flow: column;
-    color: #fff;
+    display: flex;
     background-color: #0D0B11;
     padding: 1rem 1rem 1rem;
 }
 
-footer .name {
+.name {
+    margin-right: 25rem;
     font-size: 1.1rem;
-    grid-column: 1 / 2;
     color: #ff0074;
-    justify-self: start;
+    align-self: flex-start;
 }
 
-footer .copyright {
-    justify-self: end;
-    margin-right: 2rem;
+.copyright {
+    margin-left: 35rem;
     font-size: .85rem;
-    grid-column: 3 / 4;
     color: #fff;
     text-decoration: none;
+    align-self: flex-end;
+}
+
+footer .name,
+footer .copyright {
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
 }
