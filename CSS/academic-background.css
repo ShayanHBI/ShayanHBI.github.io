@@ -354,12 +354,20 @@ h3 {
 }
 
 .bordered {
-    border: 1px solid #414141;
+    border: 1px solid #ff0074;
     border-radius: 20px;
 }
 
 .inline-grids .bordered {
     padding: 1rem;
+}
+
+.research-interests-grid ul li::before,
+.teach-exp-grid ul li::before{
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
 }
 
 footer {
