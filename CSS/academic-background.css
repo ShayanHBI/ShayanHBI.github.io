@@ -395,24 +395,24 @@ footer {
     display: flex;
     background-color: #0D0B11;
     padding: 1rem 1rem 1rem;
+    justify-content: space-evenly;
 }
 
 .name {
-    margin-right: 25rem;
+    margin-right: 30vw;
     font-size: 1.1rem;
     color: #ff0074;
-    align-self: flex-start;
 }
 
 .copyright {
-    margin-left: 35rem;
+    margin-left: 30vw;
     font-size: .85rem;
     color: #fff;
     text-decoration: none;
-    align-self: flex-end;
 }
 
 footer .name,
 footer .copyright {
+    width: 100%;
     font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
 }
