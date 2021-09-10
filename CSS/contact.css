@@ -49,7 +49,7 @@ nav ul {
     font-family: 'Arial Rounded MT Bold';
     font-size: 1.35rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr;
     justify-items: center;
     padding: 1.5rem 0 1.5rem;
     background-color: #0D0B11;
@@ -83,19 +83,27 @@ nav ul li a:active {
     color: #ff0074;
 }
 
-main ul {
-    display: flex;
-    font-size: 0.5rem;
+p {
     text-align: center;
-    justify-content: center;
-    width: 90vw;
-    margin: 2rem auto;
+    margin-top: 5rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: repeat(5, 10vw);
+    text-align: center;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: start;
+    margin: 6rem;
 }
 
 
 figure img {
-    width: 8rem;
-    padding: 4rem;
+    width: 6rem;
+    height: 6rem;
 }
 
 .linkedin img {
@@ -103,19 +111,8 @@ figure img {
 }
 
 figure img:hover {
-    width: 8.5rem;
-}
-
-.yahoo-mail img {
-    width: 7rem;
-}
-
-.yahoo-mail img:hover {
-    padding-bottom: 0;
-}
-
-.academic-mail img {
-    margin-top: 1.6rem;
+    width: 6.5rem;
+    height: 6.5rem;
 }
 
 figure figcaption {
@@ -124,9 +121,8 @@ figure figcaption {
 
 figure img:hover + figcaption{
     display: block;
-    width: 20vw;
     margin: 0.5rem auto;
-    font-size: 1.4vw;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -137,8 +133,9 @@ figure img:hover + figcaption{
 }
 
 .back-to-top {
-    position: sticky;
+    position: fixed;
     bottom: 0;
+    right: 0.5rem;
 }
 
 .back-to-top img {

@@ -50,7 +50,7 @@ nav ul {
     font-family: 'Arial Rounded MT Bold';
     font-size: 1.35rem;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr;
     justify-items: center;
     padding: 1.5rem 0 1.5rem;
     background-color: #0D0B11;
@@ -119,8 +119,9 @@ article span {
 }
 
 .back-to-top {
-    position: sticky;
+    position: fixed;
     bottom: 0;
+    right: 0.5rem;
 }
 
 .back-to-top img {

@@ -33,6 +33,9 @@
         </nav>
 
         <main>
+            <p>
+                Reach out to me via the links below!
+            </p>
             <ul class="contacts">
                 <li class="yahoo-mail">
                     <a href="mailto:shayanhabibi75@yahoo.com">
@@ -75,58 +78,6 @@
                     </a>
                 </li>
             </ul>
-            
-            <form name="contact" action="mailto:" method="POST">
-                <!-- Contact Form Here -->
-                <script>
-                    var form = document.forms["contact"];
-                    form.addEventListener('submit',contact_submit,false);
-
-                    function contact_submit(e) {
-                        // Stop Form From Submitting
-                        e.preventDefault();
-
-                        // Set Initial Variables
-                        var target = e.target || e.srcElement;
-                        var to = 'armin.p4rvin@gmail.com';
-                        var uri = 'mailto:' + to;
-                        var body = '';
-
-                        // Set Form Values to Variables
-                        var name = target.elements['name'].value;
-                        var subject = target.elements['subject'].value;
-                        var message = target.elements['message'].value;
-
-                        // Build Body / Message with all Input Fields
-                        body += message + "\r\n\r\n";
-                        body += "Name: " + name + "\r\n";
-
-                        // Build final Mailto URI
-                        uri += '?subject=' + encodeURIComponent(subject);
-                        uri += '&body=' + encodeURIComponent(body);
-
-                        // Open Mailto in New Window / Tab
-                        window.open(uri,'_blank');
-                    }
-                </script>
-                <fieldset>
-                    <legend>Send me an Email!</legend>
-
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" required>
-
-                    <label for="email">Email Address:</label>
-                    <input type="email" name="email" id="email" required>
-
-                    <label for="subject">Subject:</label>
-                    <input type="text" name="subject" id="subject" required>
-
-                    <label for="message">Your Message:</label>
-                    <textarea name="message" spellcheck="true" id="message" required></textarea>
-
-                    <input type="submit" value="Send!">
-                </fieldset>
-            </form>
         </main>
         
         <a href="#top" class="back-to-top">
