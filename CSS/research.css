@@ -169,10 +169,20 @@ nav ul li a:active {
     grid-column: 2 / 3;
 }
 
+.back-to-top {
+    position: sticky;
+    bottom: 0;
+}
+
+.back-to-top img {
+    width: 5vw;
+    height: 5vw;
+}
+
 footer {
     margin-top: auto;
     display: grid;
-    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
@@ -182,21 +192,15 @@ footer {
     padding: 1rem 1rem 1rem;
 }
 
-footer .copyright {
-    justify-self: start;
-    margin-left: 2rem;
-    font-size: .85rem;
-    grid-column: 1 / 2;
-}
-
 footer .name {
     font-size: 1.1rem;
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     color: #ff0074;
+    justify-self: start;
 }
 
-footer .back-to-top {
-    justify-self: right;
+footer .copyright {
+    justify-self: end;
     margin-right: 2rem;
     font-size: .85rem;
     grid-column: 3 / 4;

@@ -50,7 +50,7 @@ nav ul {
     font-family: 'Arial Rounded MT Bold';
     font-size: 1.35rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     justify-items: center;
     padding: 1.5rem 0 1.5rem;
     background-color: #0D0B11;
@@ -118,10 +118,20 @@ article span {
     margin: 1rem auto;
 }
 
+.back-to-top {
+    position: sticky;
+    bottom: 0;
+}
+
+.back-to-top img {
+    width: 5vw;
+    height: 5vw;
+}
+
 footer {
     margin-top: auto;
     display: grid;
-    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
@@ -131,25 +141,18 @@ footer {
     padding: 1rem 1rem 1rem;
 }
 
-footer .copyright {
-    justify-self: start;
-    margin-left: 2rem;
-    font-size: .85rem;
-    grid-column: 1 / 2;
-}
-
 footer .name {
     font-size: 1.1rem;
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     color: #ff0074;
+    justify-self: start;
 }
 
-footer .back-to-top {
-    justify-self: right;
+footer .copyright {
+    justify-self: end;
     margin-right: 2rem;
     font-size: .85rem;
     grid-column: 3 / 4;
     color: #fff;
     text-decoration: none;
 }
-
