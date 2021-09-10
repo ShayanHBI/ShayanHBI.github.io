@@ -26,7 +26,7 @@ h1 {
     text-align: center;
     color: #fff;
     background-color: #0D0B11;
-    padding: 1rem 1rem 1rem;
+    padding: 1rem 1rem 0;
     margin: 0;
 }
 
@@ -40,13 +40,18 @@ h1::after {
     margin-top: 1rem;
 }
 
+nav {
+    position: sticky;
+    top: 0;
+}
+
 nav ul {
     font-family: 'Arial Rounded MT Bold';
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     display: grid;
-    grid-template-columns: repeat(5, minmax(min-content, auto));
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
-    padding: .5rem 0rem 1.5rem;
+    padding: 1.5rem 0 1.5rem;
     background-color: #0D0B11;
 }
 
@@ -61,12 +66,12 @@ nav ul li a:visited {
 }
 
 nav ul li a:hover {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #ff0074;
 }
 
 nav ul li a:active {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #ff0074;
 }
 
@@ -74,7 +79,7 @@ nav ul li a:active {
 .active a:visited,
 .active a:hover,
 .active a:active{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #ff0074;
 }
 
@@ -251,7 +256,7 @@ main a:hover {
 .skills-grid {
     width: calc(50vw + 1rem);
     height: calc(20vw + 1rem);
-    margin: 1rem 2rem 1rem;
+    margin: 2rem 2rem 1rem;
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: min-content auto fit-content;
