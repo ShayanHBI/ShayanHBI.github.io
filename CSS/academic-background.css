@@ -87,23 +87,27 @@ nav ul li a:active {
     color: #ff0074;
 }
 
-main a:link {
-    text-decoration: none;
-    color: #414141
+.institute {
+    font-style: italic;
+    color: #e1e1e1;
 }
 
+main a:link,
 main a:visited {
-    text-decoration: none;
-    color: #414141
-}
-
-main a:hover {
     text-decoration: underline;
+    color: #e1e1e1
 }
 
 .professor:link,
 .professor:visited {
-    color: #e1e1e1;
+    text-decoration: underline;
+    color: #e1e1e1;;
+}
+
+main a:hover,
+.professor:hover {
+    color: #ff0074;
+    text-decoration: underline;
 }
 
 .main-flex {
@@ -355,11 +359,6 @@ div.skills {
 
 h3 {
     font-size: 1.5vw;
-}
-
-.institute {
-    font-style: italic;
-    color: #e1e1e1;
 }
 
 .bordered {
