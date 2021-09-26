@@ -110,9 +110,7 @@ main a:hover,
     text-decoration: underline;
 }
 
-.main-flex {
-    display: flex;
-    flex-direction: column;
+main {
     margin-top: 1rem;
 }
 
@@ -355,6 +353,8 @@ div.skills {
 .cv.icon {
     margin: 1rem 2rem 1rem;
     height: 11vw;
+    
+    flex: 0 0 100%;
 }
 
 h3 {
