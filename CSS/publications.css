@@ -145,7 +145,25 @@ footer .copyright {
     font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
 }
 
+main a:link {
+    color: #919191;
+    text-decoration: none;
+}
 
+main a:visited {
+    color: #919191;
+    text-decoration: none;
+}
+
+main a:hover {
+    font-size: 1.4rem;
+    color: #ff0074;
+}
+
+main a:active {
+    font-size: 1.4rem;
+    color: #ff0074;
+}
 
 @media screen {
     
